@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>How to Style HTML Tables with CSS</title>
+		<link rel="stylesheet" href="/tabelaInfra/tt.css" />
+		<script src="./tt.js"></script>
+	</head>
+	<body>
+		<div class="test">
+			<table class="content-table" id="emp-table">
+				<thead>
+					<tr>
+						<th col-index="1">Rank</th>
+						<th col-index="2">
+							Name
+							<select class="table-filter" onchange="filter_rows()">
+								<option value="all"></option>
+							</select>
+						</th>
+						<th col-index="3">
+							Points
+							<select class="table-filter" onchange="filter_rows()">
+								<option value="all"></option>
+							</select>
+						</th>
+						<th col-index="4">
+							Team
+							<select class="table-filter" onchange="filter_rows()">
+								<option value="all"></option>
+							</select>
+						</th>
+						<th col-index="5">
+							Team
+							<select class="table-filter" onchange="filter_rows()">
+								<option value="all"></option>
+							</select>
+						</th>
+						<th col-index="6">
+							Team
+							<select class="table-filter" onchange="filter_rows()">
+								<option value="all"></option>
+							</select>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="linha">
+						<td>1</td>
+						<td>Domenic</td>
+						<td>88,110</td>
+						<td>Students</td>
+						<td>dcode</td>
+						<td>dcode</td>
+					</tr>
+					<tr class="linha">
+						<td>2</td>
+						<td>Sally</td>
+						<td>72,400</td>
+						<td>Students</td>
+						<td>Students</td>
+						<td>Students</td>
+					</tr>
+					<tr class="linha">
+						<td>3</td>
+						<td>Nick</td>
+						<td>52,300</td>
+						<td>dcode</td>
+						<td>dcode</td>
+						<td>dcode</td>
+					</tr>
+					<tr class="linha">
+						<td>4</td>
+						<td>David</td>
+						<td>12,540</td>
+						<td>dcode</td>
+						<td>dcode</td>
+						<td>dcode</td>
+					</tr>
+					<tr class="linha">
+						<td>5</td>
+						<td>Martin</td>
+						<td>79,090</td>
+						<td>dcode</td>
+						<td>dcode</td>
+						<td>dcode</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script>
+			getUniqueValuesFromColumn();
+		</script>
+	</body>
+</html>
